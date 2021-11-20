@@ -17,11 +17,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-@font-face {
-  font-family: 'Post No';
-  src: local("Post No"), url(/fonts/postnobillscolombo-bold.ttf);
-}
-
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -85,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  font-family: 'Post No';
+  font-family: 'Post No Bills Colombo';
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -101,13 +96,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .table {
   background-color: #11161E;
+  display: block;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
   height: 100%;
+  top: 0;
+  left: 50%;
   z-index: 1;
   display: none;
+  transform: translateX(-50%);
 }
 
 header.table {
   display: block;
+  right: 2%;
+}
+
+header.table nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
 }
 
 header.table .header_nav {
@@ -116,6 +125,20 @@ header.table .header_nav {
 
 header.table body {
   overflow: hidden;
+}
+
+header.table .logo {
+  border-right: 0;
+}
+
+header.table .nav_burger {
+  top: 17px;
+  right: 30px;
+  left: auto;
+}
+
+header.table .header_links:hover {
+  border-top: none;
 }
 
 .nav_burger {
@@ -262,10 +285,11 @@ nav {
   font-size: 20px;
   color: white;
   text-shadow: black 5px 14px 11px;
-  border: solid 1px white;
+  border: solid 1px white !important;
   padding: 15px 30px;
   align-items: flex-end;
   transition: .7s;
+  width: auto !important;
 }
 
 .header_button:hover {
@@ -340,7 +364,7 @@ p.simvol:hover .danil {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 50px;
+  margin-right: 51px;
   padding: 40px 20px;
   padding-bottom: 0;
   margin-bottom: 70px;
@@ -1160,6 +1184,15 @@ footer {
   .project_item::after, .project_item_2::after {
     font-size: 40px !important;
   }
+  .phone1 {
+    right: 3%;
+  }
+  .phone2 {
+    right: 26%;
+  }
+  .logo {
+    font-size: 44px;
+  }
 }
 
 @media (max-width: 770px) {
@@ -1171,8 +1204,8 @@ footer {
     display: none;
   }
   .nav_burger {
-    top: 65px;
-    left: 36%;
+    top: 17px;
+    left: 42%;
     display: block;
   }
   nav {
@@ -1187,16 +1220,68 @@ footer {
   .transparent {
     height: 300px;
   }
+  .transparent .container2 {
+    padding: 0 25px;
+  }
   .transparent .rob_title {
     padding-top: 35px;
   }
   header.active .nav_burger {
-    top: 30px;
+    top: 17px;
     right: 30px;
     left: auto;
   }
   header.active .logo {
     border-right: none;
+  }
+  header.active body {
+    overflow: hidden;
+  }
+  .header_links.crucial {
+    border-top: 2px solid transparent !important;
+  }
+  .project_item_2::before {
+    z-index: 0;
+  }
+  .project_item::before {
+    z-index: 0;
+  }
+  .project_item::after {
+    z-index: 0;
+  }
+  .project_item_2::after {
+    z-index: 0;
+  }
+  .project_items {
+    margin-top: 35px;
+  }
+  .price_items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .price_item:nth-child(-n+2) {
+    margin-right: 0;
+  }
+  .header_links:hover {
+    border-top: 2px solid transparent;
+  }
+  .header_text {
+    margin-right: 0;
+  }
+  .about .rob_text {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .about .rob_title {
+    justify-content: center;
+  }
+  .price .rob_text {
+    text-align: center;
+  }
+  .price .rob_title {
+    justify-content: center;
+    text-align: center;
   }
   .price {
     max-width: 80%;
@@ -1204,9 +1289,6 @@ footer {
   .logo {
     font-size: 40px;
     padding-left: 30px;
-  }
-  .nav_burger.active .nav_burger_item::before {
-    top: -11px;
   }
   .project_items {
     display: flex;
@@ -1223,6 +1305,17 @@ footer {
   .project_item_2::before, .project_item::before {
     opacity: .8 !important;
   }
+  .active > nav {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav_burger.active .nav_burger_item::after {
+    width: 100%;
+  }
+  .logo {
+    line-height: 50px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1230,11 +1323,14 @@ footer {
     width: 60%;
   }
   .nav_burger {
-    left: 48%;
+    left: 56%;
     width: 30px;
   }
+  nav {
+    padding-top: 0;
+  }
   .logo {
-    font-size: 36px;
+    font-size: 30px;
     padding-right: 25px;
     right: 0;
   }

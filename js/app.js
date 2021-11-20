@@ -1,6 +1,6 @@
 $(function(){
     var header = $("#header"),
-        introH =  $(".deve").innerHeight();
+        introH =  $(".wrapper").innerHeight();
         simvol = $(".simvol"),
         scrollOffset = $(window).scrollTop(50);
        
@@ -71,7 +71,7 @@ $(function(){
             blockid = $this.data('scroll'); 
             console.log(blockid);
             // -75 это чтоб был отступ и шапка не наезжала на текст 
-            blockoffset =$(blockid).offset().top; 
+            blockoffset =$(blockid).offset().top - 30; 
         // добавление класса актив для ссылок
         $(".header_links").removeClass("crucial");
         // $("grid_text").removeClass("active");
@@ -90,9 +90,29 @@ $(function(){
     });
 
     // свое
-    $("#nav").on("click", function(event){
+    $(".header_text").on("click", function(event){
         event.preventDefault();
         $("#nav_burger").removeClass("active");
         $("header").removeClass("table");
     });
+
+    //
 });
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting){
+            console.log('Все работает')
+            document.querySelectorAll('.header_links').forEach((link) => {
+                link.classList.toggle('crucial', 
+                    link.getAttribute('href').replace('#','') === entry.target.id
+                );
+            });
+        }
+    });
+}, { 
+    threshold:0.7,
+});
+document.querySelectorAll('.section').forEach(
+    (section) => observer.observe(section),
+);

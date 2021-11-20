@@ -16,11 +16,11 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;  
 }
 
-@font-face {
-	font-family: 'Post No'; 
-	src: local('Post No'),
-		url(/fonts/postnobillscolombo-bold.ttf); 
-}
+// @font-face {
+// 	font-family: 'Post No'; 
+// 	src: local('Post No'),
+// 		url(/fonts/postnobillscolombo-bold.ttf); 
+// }
 
 .container{
     max-width: 1140px;
@@ -80,7 +80,7 @@ h1,h2,h3,h4,h5,h6{
     display: none;
 }
 .logo{
-    font-family: 'Post No';
+    font-family: 'Post No Bills Colombo';
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -95,17 +95,41 @@ h1,h2,h3,h4,h5,h6{
 }
 .table{
     background-color: #11161E;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
     height: 100%;
+    top: 0;
+    left: 50%;
     z-index: 1;
     display: none;
+    transform: translateX(-50%);
 }
 header.table{
     display: block;
+    right: 2%;
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+    }
     .header_nav{
         display: block;
     }
     body{
         overflow: hidden;
+    }
+    .logo{
+        border-right: 0;
+    }
+    .nav_burger{
+        top: 17px;
+        right: 30px;
+        left: auto;
+    }
+    .header_links:hover{
+        border-top:none;
     }
 }
 
@@ -244,10 +268,11 @@ nav{
     font-size: 20px;
     color: white;
     text-shadow:black 5px 14px 11px;
-    border: solid 1px white;
+    border: solid 1px white !important;
     padding: 15px 30px;
     align-items: flex-end;
     transition: .7s;
+    width: auto !important;
 }
 .header_button:hover{
     background: white;
@@ -320,7 +345,7 @@ p.simvol:hover .danil {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 51px;
     padding: 40px 20px;
     padding-bottom: 0;
     margin-bottom: 70px;

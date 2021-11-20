@@ -234,6 +234,15 @@
      .project_item::after , .project_item_2::after{
           font-size: 40px !important;
      }
+     .phone1{
+          right: 3%;
+     }
+     .phone2{
+          right: 26%;
+     }
+     .logo{
+          font-size: 44px;
+     }
 }
 
 @media (max-width:770px) {
@@ -245,8 +254,8 @@
           display: none;
      }
      .nav_burger{
-          top: 65px;
-          left: 36%;     
+          top: 17px;
+          left: 42%;     
           display: block;
      }
      nav{
@@ -259,30 +268,87 @@
           padding-top: 7%;
      }
      .transparent {
-     
+          
           height: 300px;
+          .container2{
+               padding: 0 25px;
+          }
           .rob_title{
                padding-top: 35px;
           }
      }
      header.active .nav_burger{
-          top: 30px;
+          top: 17px;
           right: 30px;
           left: auto;
      }
-     header.active .logo{
-          border-right: none;
+     header.active {
+          .logo{
+               border-right: none;
+          }
+          body{
+              overflow:hidden;
+          }
+         
      }
+     
+     .header_links.crucial{
+          border-top:2px solid transparent !important;             
+     }
+          
+     .project_item_2::before{
+          z-index: 0;
+     }
+     .project_item::before{
+          z-index: 0;
+     }
+
+     .project_item::after{
+          z-index: 0;
+     }
+     .project_item_2::after{
+          z-index: 0;
+     }
+     .project_items{
+          margin-top: 35px;
+     }
+     
+     .price_items{
+          flex-direction: column;
+          align-items: center;
+     }
+     .price_item:nth-child(-n+2){
+          margin-right: 0;
+     }
+     .header_links:hover{
+          border-top:2px solid transparent;
+     }
+     .header_text{
+          margin-right: 0;
+     }
+     .about .rob_text{
+          margin: 0 auto;
+          margin-top: 20px;
+          text-align: center;
+     }
+     .about .rob_title{
+          justify-content: center;
+     }
+     .price .rob_text{
+          text-align: center;
+     }
+     .price .rob_title{
+          justify-content: center;
+          text-align: center;
+     }
+
      .price {
           max-width: 80%;
      }
+    
      .logo{
           font-size: 40px;
-        
           padding-left: 30px;
-     }
-     .nav_burger.active .nav_burger_item::before{
-          top: -11px;
      }
      .project_items{
           display: flex;
@@ -300,6 +366,19 @@
      .project_item_2::before , .project_item::before{
           opacity: .8 !important;   
      }
+     .active > nav {
+          padding-top: 0;
+          display: flex;
+          flex-direction: column;
+     }
+     .nav_burger.active{
+          .nav_burger_item::after {
+               width: 100%;
+           }
+     }
+     .logo {
+          line-height: 50px;
+     }
      
 }
 
@@ -308,11 +387,15 @@
           width: 60%;
      }
      .nav_burger{
-          left: 48%;
+          left: 56%;
+          // top: 27px;
           width: 30px;
      }
+     nav{
+          padding-top: 0;
+     }
      .logo{
-          font-size: 36px;
+          font-size: 30px;
           padding-right: 25px;
           right: 0;
      }
