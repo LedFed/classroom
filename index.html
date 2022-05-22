@@ -6,230 +6,378 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/Montserrat/Montserrat-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="fonts/postnobillscolombo-bold.ttf">
-    <link href="https://fonts.googleapis.com/css2?family=Ranga:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="section wrapper" id="wrapper">
-        <div class="container">
-            <header  id="header" class="">
-                <nav>
-                    <a class="logo"  href="#" >LedFed</a>  
-                    <ul class="header_nav">
-                        <li class="header_text">
-                            <a href="#deve" class="header_links" data-scroll="#deve">Этапы</a>
-                            </li>
-                        <li class="header_text">
-                            <a href="#price" class="header_links" data-scroll="#price">Цены</a>
-                            </li>
-                        <li class="header_text">
-                            <a href="#about" class="header_links" data-scroll="#about">Преимущества</a>
-                            </li>
-                        <li class="header_text">
-                            <a href="#last-projects" class="header_links" data-scroll="#last-projects">Проекты</a>
-                            </li>
-                        <li class="header_text">
-                            <a href="#contacts" class="header_links" data-scroll="#contacts">Контакты</a> 
-                            </li>
-                    </ul>     
-                </nav>    
-                <button class="nav_burger" id="nav_burger" type="button">
-                    <span class="nav_burger_item"></span>
-                </button>
-            </header>
-            <div class="header_center">
-                <h1 class="header_title">Веб-дизайн</h1>
-                <hr width="35%" color="#EAEAEA">
-                <p class="header_twotitle" data-scroll="#cont">Веб</p>
-                <a href="#content" class="header_button" data-scroll="#contacts">Заказать сайт</a>
-                
+    <div class="container none">
+        <header>
+            <div class="header_top">
+                <div class="header_social">
+                    <img src="img/inst.svg" alt="inst">
+                    <img src="img/face.svg" alt="face">
+                </div>
+                <img src="img/logo.svg" alt="logo" class="header_logo">
+                <div class="header_settings">
+                    <img src="img/phone.svg" alt="phone">
+                    <div class="header_language">Ru</div>
+                    <div class="menu back menu--3 ">
+                        <label>
+                          <input type="checkbox">
+                          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="30" />
+                            <path class="line--1" d="M0 40h62c18 0 18-20-17 5L31 55" />
+                            <path class="line--2" d="M0 50h80" />
+                            <path class="line--3" d="M0 60h62c18 0 18 20-17-5L31 45" />
+                          </svg>
+                        </label>
+                    </div>
+                </div>
             </div>
-            <p class="simvol"></p>
-        </div>
+            <nav class="">
+                <ul class="header_nav">
+                    <li class="header_links"><a href="#" class="header_link">Участки</a></li>
+                    <li class="header_links"><a href="#" class="header_link">Место</a></li>
+                    <li class="header_links"><a href="#" class="header_link">История</a></li>
+                    <li class="header_links"><a href="#" class="header_link">Этапы</a></li>
+                    <li class="header_links"><a href="#" class="header_link">Команда</a></li>
+                    <li class="header_links"><a href="#" class="header_link">Документы</a></li>
+                    <li class="header_links"><a href="#" class="header_link">Прогулка</a></li>
+                </ul>
+            </nav>
+            <div class="header_iner">
+                <div class="header_eleven">11</div>
+                <div class="header_right">
+                    <h1 class="header_title">Жилой район в Виймси</h1>
+                    <p class="header_text">Одиннадцать приватных участков с собственным лесом</p>
+                    <a href="#" class="header_btn">Участки</a>
+                </div>
+            </div>
+            
+
+        </header>
+        
     </div>
     
-    <div class="section deve" id="deve">
+    <section class="place  ">
+        <div class="place_position">           
+            <img src="img/cloud.png" alt="cloud" class="place_cloud">
+                <div class="container">
+                    <div class="place_position_items">
+                        <div class="place_position_item">
+                            <img src="img/forest.svg" alt="forest">
+                            <h3 class="place_title">Лес</h3>
+                            <p class="place_text">Жизнь в окружении леса </p>
+                        </div>
+                        <div class="place_position_item">
+                            <img src="img/more.svg" alt="more">
+                            <h3 class="place_title">Море</h3>
+                            <p class="place_text">В 311 метрах от дома ваше море </p>
+                        </div>
+                        <div class="place_position_item">
+                            <img src="img/vozdux.svg" alt="vozdux">
+                            <h3 class="place_title">Воздух</h3>
+                            <p class="place_text">Вдыхайте морской и хвойный воздух </p>
+                        </div>
+                    </div>
+                    <div class="place_elipse"><img src="/img/elipse.svg" alt="elipse"></div>
+
+                    <div class="place_land">
+                        <div class="place_land_item">
+                            <div class="place_land_items">
+                                <svg width="177" height="155" viewBox="0 0 177 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M52.2626 129.214C84.602 137.619 148.183 154.542 150.724 155L177 54.4362L74.2072 0L0 42.976L52.2626 129.214Z" fill="white" fill-opacity="0.2"/>
+                                </svg>                                    
+                            </div>
+                            <div class="place_land_items">
+                                <svg width="145" height="158" viewBox="0 0 145 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 99.5458L103.99 158L145 0H49.798L0 99.5458Z" fill="white" fill-opacity="0.2"/>
+                                </svg>                                    
+                            </div>
+                            <div class="place_land_items">
+                                <svg width="133" height="161" viewBox="0 0 133 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M92.5089 161H0L10.64 26.932H92.5089L133 0L92.5089 161Z" fill="white" fill-opacity="0.2"/>
+                                </svg>
+                            </div>
+                            <div class="place_land_items"><svg width="196" height="182" viewBox="0 0 196 182" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M176.429 9.83784L196 182L0 130.496L36.8399 0L176.429 9.83784Z" fill="white" fill-opacity="0.2"/>
+                                </svg>
+                            </div>
+                            <div class="place_land_items"><svg width="235" height="232" viewBox="0 0 235 232" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M235 50.66C189.507 110.627 98.1726 230.849 96.7817 232L0 139.027L40.857 0L235 50.66Z" fill="white" fill-opacity="0.2"/>
+                                </svg>
+                            </div>
+                            <div class="place_land_items"><svg width="185" height="205" viewBox="0 0 185 205" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M62.7023 195.103C43.402 176.064 2.9374 135.95 0 132.331L100.55 0L185 164.283L105.634 205L62.7023 195.103Z" fill="white" fill-opacity="0.2"/>
+                                </svg>
+                            </div>
+                            <div class="place_land_items"><svg width="195" height="196" viewBox="0 0 195 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.1938 0L0 32.5228L85.0441 196L149.758 159.16L195 69.0749L23.1938 0Z" fill="white" fill-opacity="0.2"/>
+                                </svg>
+                            </div>
+                            <div class="place_land_items"><svg width="185" height="105" viewBox="0 0 185 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M146.971 3.18182C98.5523 2.12121 1.37249 0 0 0L11.7233 105L185 100.661L146.971 3.18182Z" fill="white" fill-opacity="0.2"/>
+                                </svg>
+                            </div>
+                            <div class="place_land_items"><svg width="193" height="80" viewBox="0 0 193 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M193 13.4328L0 0L28.1581 80H131.698L187.72 45.6716L193 13.4328Z" fill="white" fill-opacity="0.2"/>
+                                </svg>
+                            </div>
+                            <div class="place_land_items"><svg width="134" height="187" viewBox="0 0 134 187" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M34.4246 0C24.3723 28.4378 3.41401 87.4965 0 96.2289L92.7474 187L134 25.5653L34.4246 0Z" fill="white" fill-opacity="0.2"/>
+                                </svg>
+                            </div>
+                            <div class="place_land_items">
+                                <svg width="149" height="172" viewBox="0 0 149 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M87.8497 0C60.3847 15.4618 4.36378 47.1343 0 50.1307L124.597 172L149 102.566L87.8497 0Z" fill="white" fill-opacity="0.2"/>
+                                </svg>
+                            </div>
+                        </div> 
+                        <div class="place_land_info">
+                            <div class="place_land_between">
+                                <h6 class="place_land_title">Участок №5</h6>
+                                <p class="place_land_text">Свободен</p>
+                            </div>
+                            <div class="place_land_between">
+                                <p class="place_land_subtitle">Площадь усастка:</p>
+                                <div class="place_land_texts">3000 м2</div>
+                            </div>
+                            <div class="place_land_between">
+                                <p class="place_land_subtitle">Площадь застройки:</p>
+                                <div class="place_land_texts">300 м2</div>
+                            </div>
+                            <div class="place_land_between">
+                                <p class="place_land_subtitle">Адрес:</p>
+                                <div class="place_land_texts">Vainu tee 12</div>
+                            </div>
+                            <div class="place_land_between">
+                                <p class="place_land_subtitle">Стоимость:</p>
+                                <div class="place_land_texts">350 000 €</div>
+                            </div>
+                            <a href="#" class="place_land_btn">Подробнее</a>
+                        </div>
+                        <img src="img/favicon/Vector.svg" alt="Vector">
+                    </div>
+                </div>
+        </div>     
+    </section>
+
+    <section class="description none">
         <div class="container">
-            <h2 class="title">Этапы разработки сайта</h2>
-            <hr class="title_hr"> 
-            <div class="deve_items">
-                <div class="item">
-                    <img src="img/item/1.png" alt="" class="deve_icon">
-                    <h3 class="deve_title">Бриф</h3>
-                    <p class="deve_text">Описываете свои пожелания в общих чертах а также определяете тип и обозначаете основной функционал 
+            <div class="description_corect">
+                <h3 class="main_title">Место для вашего дома:</h3>
+            </div>
+            
+            <div class="description_column">
+                <img src="/img/place.png" alt="place">
+                <ul class="description_text">
+                    <li>Возможно здесь вы построите свой дом</li>
+                    <li>В окружении заповедного леса </li>
+                    <li>В тихом и спокойном месте </li>
+                    <li>В 22 минутах от Таллинна </li>
+                    <li>В 311 метрах от моря</li>
+                </ul>
+            </div>
+        </div>
+        <div class="description_tree">
+              <div class="container">
+                <h3 class="main_title white">Истоки </h3>
+                <p class="tree_text">Эта земля формировалась больше 11 миллиардов лет. 11 семей построят здесь 11 современных домов.</p>
+              </div>
+        </div>
+        <div class="description_history">
+            <div class="container">
+                <h3 class="main_title">История</h3>
+                <p class="description_text">Часть вашей жизни</p>
+                <div class="description_info">
+                    <p class="main_text">Лес появился на земле раньше человека. Он хранит в своих корнях историю и делится с нами своим спокойствием. В каждом лесу есть что-то особенное, и оно бесценно. Для тех, кто осознанно подходит к выбору жилого пространства, дом -это не просто место, где можно провести время в промежутках между работой. Это место восстановления сил и наполнения новой энергией. Дом в окружении леса дарит настоящее умиротворение, забирает наши тревоги, взамен даруя спокойствие и уверенность. В нашем мире всё неустанно стремится к обновлению- в этом залог самой жизни. </p>
+                    <p class="main_text">Мир, как внешний, так и внутренний находится в постоянном движении. Мы стремимся к постижению ценности и уникальности каждого прожитого мгновения. К развитию чувствительности к мельчайшим изменениям в потоке жизни. В условиях избытка событий внешних, мы упускаем глубину событий внутренних. Прогулка в лесу или по берегу моря возвращает нас к нам самим. Познакомившись с этой уникальной землей, мы захотели внести вклад в ее эволюцию. 
                     </p>
+                    <div class="descript_highway">
+                         <p class="main_text">В создание нового этапа жизни для большого участка земли. Создать особенный жилой район в окружении природы. Аккуратно и бережно интегрировать новейшие технические возможности в дикую природу, уравновешивая многовековую историю, настоящее и будущее. Возможно именно с этим местом будет крепко связана часть вашей счастливой жизни. 
+                        </p>
+                        <a href="#" class="header_btn">Участки</a>
+                    </div>
+                   
                 </div>
-                <div class="item">
-                    <img src="img/item/2.png" alt="" class="deve_icon">
-                    <h3 class="deve_title">Прототипирование </h3>
-                    <p class="deve_text">Разработка структуры проекта</p>
+              
+            </div>
+       
+        </div>
+    </section>
+
+    <section class="eco none">
+        <div class="container">
+            <h3 class="main_title">Инфраструктура:</h3>
+            <ul class="eco_itmes">
+                <li class="eco_item">Новые дороги</li>
+                <li class="eco_item">Уличное освещение</li>
+                <li class="eco_item">Маяк</li>
+                <li class="eco_item">Забор</li>
+                <li class="eco_item">Общая зона</li>
+                <li class="eco_item">Скамейки с крышей</li>
+                <li class="eco_item">Дорожка</li>
+                <li class="eco_item">Детская площадка</li>
+                <li class="eco_item">Песочница</li>
+                <li class="eco_item">Входная группа</li>
+                <li class="eco_item">Коммуникации</li>
+                <li class="eco_item">Лес </li>
+                <li class="eco_item">И ваш участок земли</li>
+            </ul>
+            <div class="eco_column">
+                <img src="img/car.png" alt="car">
+                <div class="eco_row">
+                    <h4 class="eco_subtitle">Новые дороги</h4>
+                    <p class="eco_text">Новая широкая дорога</p>
+                    <button class="btn_preload"><img src="img/next.svg" alt="next"></button>
+                    <button class="btn_next"><img src="img/next.svg" alt="next"></button>
                 </div>
-                <div class="item">
-                    <img src="img/item/6.png" alt="" class="deve_icon">
-                    <h3 class="deve_title">Дизайн</h3>
-                    <p class="deve_text"> Делаем дизайн вашего будущего сайта  и отправляем вам на одобрение </p>
-                </div>
-                <div class="item">
-                    <img src="img/item/4.png" alt="" class="deve_icon">
-                    <h3 class="deve_title">Верстка сайта</h3>
-                    <p class="deve_text">Написание кода для frontend и backend </p>
-                </div>
-                <div class="item">
-                    <img src="img/item/3.png" alt="" class="deve_icon">
-                    <h3 class="deve_title">Проверка</h3>
-                    <p class="deve_text">Проверка верстки на валидность ( HTML  , CSS , JS )</p>
-                </div>
-                <div class="item">
-                    <img src="img/item/5.png" alt="" class="deve_icon">
-                    <h3 class="deve_title">Сдача готового проекта клиенту  </h3>
-                    <p class="deve_text"></p>
-                    <a href="" class="header_button none" data-scroll="#contacts">Заказать сайт</a>
+            
+            </div>
+            <div class="eco_margin_top">
+                <h3 class="main_title">Этапы</h3>
+                <p class="description_text">Срок реализации</p>
+                <div class="eco_box">
+                    <div class="eco_line">
+                        <div class="eco_elopce">1</div>
+                        <div class="eco_elopce"></div>
+                        <div class="eco_elopce"></div>
+                        <div class="eco_elopce"></div>
+                        <div class="eco_elopce">2</div>
+                        <div class="eco_elopce"><div class="eco_triangle"></div></div>
+                        <div class="eco_elopce"></div>
+                        <div class="eco_elopce">3</div>
+                        <div class="eco_elopce"></div>
+                        <div class="eco_elopce"></div>
+                        <div class="eco_elopce"></div>
+                        <div class="eco_elopce">4</div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <div class="team none">
+        <div class="container">
+            <h3 class="main_title white">Команда</h3>
+            <p class="description_text white">Участок бережно подготовают:</p>
+            <ul class="team_items">
+                <li class="team_item">Разработка и концепция проекта <span>Media OÜ в лице Dmitri Vain</span></li>
+                <li class="team_item">Финансирование проекта <span>Estateguru OÜ</span></li>
+                <li class="team_item">Дендрология <span>Aquaplant Design OÜ</span></li>
+                <li class="team_item"> Геодезия - <span> Geodeesia24 OÜ</span></li>
+                <li class="team_item"> Геология - <span>Maves OÜ</span></li>
+                <li class="team_item">Проектирование коммуникаций и дорог <span>Skepast&Puhkim OÜ</span></li>
+                <li class="team_item">Визуализация и проектирование <span>Dmitri Kulakov</span></li>
+                <li class="team_item">Веб дизайн  и фото <span>Aleksandr Grusha, Sergey Smirnov</span></li>
+                <li class="team_item">Строительство Дорог и коммуникаций <span>в процессе выбора</span></li>
+                <li class="team_item">Архитектурное бюро <span>VNDL ARHITEKTUUR OÜ</span></li>
+                <li class="team_item">Продажа участков <span>Svetlana Davidovski</span></li>
+            </ul>
+        </div>
     </div>
-    <!-- TRANSPARENT  -->
-    <div class="transparent" >
-        <div class="container2">              
-            <h3 class="rob_title">Удобство</h3>
-            <p class="rob_text">Если вы работаете на перспективу, то имейте в виду — уникальность формирует бренд. Дальновидные компании, смотрящие в будущее, предпочитают отстраиваться от конкурентов уже на этапе создания сайта</p>
-            <a href="" class="transparent_but">Заказать в 1 клик</a>
-            <img src="img/phone.png" alt="" class="phone1">
-            <img src="img/phone2.png" alt="" class="phone2">
-        </div>             
+   
+    <section class="team_doc none">
+        <div class="container">
+            <h3 class="main_title white">Документы</h3>
+            <p class="description_text white">Документы для скачивания</p>
+            <div class="team_doc_column">
+                <a href="#" class="team_doc_btn">Геодезия</a>
+                <a href="#" class="team_doc_btn">Геология</a>
+                <a href="#" class="team_doc_btn">Дендрология</a>
+                <a href="#" class="team_doc_btn">План застройки</a>
+                <a href="#" class="team_doc_btn">Общая презентация </a>
+                <a href="#" class="team_doc_btn">Айдентика</a>
+            </div>
+        </div>
+       
+    </section>
+
+    <div class="map none">
+        <div class="container">
+            <div class="map_column">
+                <h3 class="main_title">Место</h3>
+                <a href="#" class="maps_link">Piirikivi tee 15</a>
+            </div>
+            <div class="maps">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A395772b9eee0c96b441fbf6899aac44d30843e859c8129d9bc904dda60757c7c&amp;source=constructor" width="100%" height="379" frameborder="0"></iframe>
+            </div>
+        </div>
     </div>
-    <!-- PRICE -->
-    <div class="section price" id="price">
-        <div class="container2">
-            <h3 class="rob_title">Дешевле чем заказывать у веб-студий
-            </h3>
-            <p class="rob_text">Выбирай  функционал ,который будет использован
+
+    <div class="walked none">
+        <div class="container">
+            <h3 class="main_title white">Прогулка</h3>
+            <p class="description_text">Запланируйте прогулку на выходные по этому чудесному месту 
             </p>
-            <div class="price_items">                
-                <div class="price_item">
-                    <h4 class="price_title">“Альт”</h4>
-                    <ul>
-                        <li class="price_text">Собственная страница</li>
-                        <li class="price_text">Редактирование дизайна</li>
-                        <li class="price_text">Подключение соц.сети</li>
-                        <li class="price_text">Форма для заявок клиентов</li>
-                        <li class="price_text noactive">Прием платежей</li>
-                        <li class="price_text noactive">База данных</li>
-                        <li class="price_text noactive">Поддержка 24/7</li>
-                    </ul>
-                    <a href="#" class="price_but purple">$29</a>
-                </div>
-
-                <div class="price_item">
-                    <h4 class="price_title">“Альт”</h4>
-                    <ul>
-                        <li class="price_text">Собственная страница</li>
-                        <li class="price_text">Редактирование дизайна</li>
-                        <li class="price_text">Подключение соц.сети</li>
-                        <li class="price_text">Форма для заявок клиентов</li>
-                        <li class="price_text">Прием платежей</li>
-                        <li class="price_text">База данных</li>
-                        <li class="price_text noactive">Поддержка 24/7</li>
-                    </ul>
-                    <a href="#" class="price_but green">$59</a>
-                </div>
-
-                <div class="price_item">
-                    <h4 class="price_title">“Альт”</h4>
-                    <ul>
-                        <li class="price_text">Собственная страница</li>
-                        <li class="price_text">Редактирование дизайна</li>
-                        <li class="price_text">Подключение соц.сети</li>
-                        <li class="price_text">Форма для заявок клиентов</li>
-                        <li class="price_text">Прием платежей</li>
-                        <li class="price_text">База данных</li>
-                        <li class="price_text">Поддержка 24/7</li>
-                    </ul>
-                    <a href="#" class="price_but">$89</a>
-                </div>
-            </div>
+            <a href="#" class="header_btn">Построить маршрут</a>
         </div>
     </div>
 
-    <div class="section about" id="about">
-        <div class="container2">
-            <h3 class="rob_title">Преимущестава</h3>
-            <p class="rob_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, corporis recusandae quae provident culpa, ratione neque voluptas voluptatibus molestias minima quas natus ab fuga cupiditate? Dolor corporis ducimus </p>
-            <div class="deve_items">
-                <div class="item">
-                    <img src="img/icon_clock.png" alt="" class="deve_icon">
-                    <div class="deve_title">Экономия</div>
-                    <div class="deve_text">Не трать время</div>
+    <footer class="none">
+        <div class="footer_up">
+            <div class="container">
+                <div class="footer_column">
+                    <img src="img/pers.png" alt="pers">
+                    <div class="footer_right">
+                        <h4 class="footer_title">Ваш персональный помощник в покупке участка: 
+                        </h4>
+                        <p class="description_text">Svetlana Davidovski </p>
+                        <div class="new_text">
+                            <p class="footer_text">svetlana@svkinnisvara.ee </p>
+                            <p class="footer_text">+372 5813 0166</p>
+                        </div>
+                        <div class="footer_up_social">
+                            <img src="img/Subtract-1.svg" alt="Subtract">
+                            <img src="img/Subtract-2.svg" alt="">
+                            <img src="img/Subtract.svg" alt="">
+                        </div>
+                    </div>
                 </div>
-
-                <div class="item">
-                    <img src="img/Image_blue.png" alt="" class="deve_icon">
-                    <div class="deve_title">Удобство</div>
-                    <div class="deve_text">Понятный и простой интерфейс не затруднит работу с сервисом</div>
-                </div>
-
-                <div class="item">
-                    <img src="img/Settings.png" alt="" class="deve_icon">
-                    <div class="deve_title">Функционал</div>
-                    <div class="deve_text">Не переплачивай за не нужный функционал </div>
+            </div>
+        </div>
+        <div class="footer_down">
+            <div class="container">
+                <div class="footer_between">
+                    <div class="footer_contacts">
+                        <p class="footer_contacts_text">Контакты:</p>
+                        <ul class="footer_cont_items">
+                            <li class="footer_contacts_subtext">Team Media OU</li>
+                            <li class="footer_contacts_subtext">Harjumaa, Tallinn linn, Tulika põik 4, 10613</li>
+                            <li class="footer_contacts_subtext">Тел.: 58205581</li>
+                            <li class="footer_contacts_subtext">E-mail: dmitri.vain@gmail.com</li>
+                            <li class="footer_contacts_subtext">Регистрационый код 14268077</li>
+                        </ul>                         
+                        <div class="footer_contacts_social">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="F8F8F8" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.55752C0 4.27905 4.27905 0 9.55752 0C14.836 0 19.115 4.27905 19.115 9.55752C19.115 14.836 14.836 19.115 9.55752 19.115C4.27905 19.115 0 14.836 0 9.55752ZM7.5666 9.55752C7.5666 8.45788 8.4578 7.56621 9.55744 7.56621C10.6571 7.56621 11.5487 8.45788 11.5487 9.55752C11.5487 10.6572 10.6571 11.5488 9.55744 11.5488C8.4578 11.5488 7.5666 10.6572 7.5666 9.55752ZM6.49014 9.55752C6.49014 11.2516 7.86336 12.6248 9.55744 12.6248C11.2515 12.6248 12.6247 11.2516 12.6247 9.55752C12.6247 7.86345 11.2515 6.49022 9.55744 6.49022C7.86336 6.49022 6.49014 7.86345 6.49014 9.55752ZM12.0293 6.3686C12.0293 6.51038 12.0713 6.64898 12.15 6.76689C12.2287 6.8848 12.3406 6.97673 12.4716 7.03103C12.6025 7.08534 12.7467 7.09959 12.8857 7.07199C13.0248 7.04438 13.1525 6.97617 13.2528 6.87596C13.3531 6.77575 13.4214 6.64805 13.4491 6.50902C13.4769 6.36998 13.4627 6.22585 13.4085 6.09484C13.3543 5.96384 13.2625 5.85185 13.1446 5.77304C13.0268 5.69423 12.8882 5.65213 12.7464 5.65208H12.7462C12.5561 5.65217 12.3739 5.72768 12.2395 5.86202C12.1051 5.99637 12.0295 6.17857 12.0293 6.3686ZM7.14416 14.4198C6.56177 14.3932 6.24523 14.2962 6.03487 14.2143C5.75598 14.1057 5.55699 13.9764 5.34778 13.7675C5.13856 13.5585 5.00906 13.3597 4.90096 13.0809C4.81896 12.8706 4.72195 12.5539 4.69548 11.9716C4.66652 11.3419 4.66073 11.1528 4.66073 9.55757C4.66073 7.96237 4.667 7.77375 4.69548 7.14358C4.722 6.56119 4.81972 6.24517 4.90096 6.03428C5.00954 5.75539 5.13885 5.55641 5.34778 5.34719C5.5567 5.13798 5.7555 5.00847 6.03487 4.90038C6.24513 4.81837 6.56177 4.72137 7.14416 4.69489C7.77381 4.66593 7.96295 4.66015 9.55744 4.66015C11.1519 4.66015 11.3413 4.66641 11.9714 4.69489C12.5538 4.72141 12.8698 4.81914 13.0807 4.90038C13.3596 5.00847 13.5586 5.13826 13.7678 5.34719C13.977 5.55612 14.1061 5.75539 14.2146 6.03428C14.2966 6.24455 14.3936 6.56119 14.4201 7.14358C14.4491 7.77375 14.4549 7.96237 14.4549 9.55757C14.4549 11.1528 14.4491 11.3414 14.4201 11.9716C14.3936 12.5539 14.2961 12.8705 14.2146 13.0809C14.1061 13.3597 13.9767 13.5587 13.7678 13.7675C13.5589 13.9762 13.3596 14.1057 13.0807 14.2143C12.8705 14.2963 12.5538 14.3933 11.9714 14.4198C11.3418 14.4487 11.1526 14.4545 9.55744 14.4545C7.96224 14.4545 7.77362 14.4487 7.14416 14.4198ZM7.0947 3.62024C6.45879 3.6492 6.02426 3.75003 5.64478 3.8977C5.25177 4.05019 4.91907 4.25477 4.58662 4.5867C4.25416 4.91863 4.0501 5.25186 3.89761 5.64486C3.74995 6.02458 3.64912 6.45888 3.62016 7.09479C3.59072 7.7317 3.58398 7.93532 3.58398 9.55752C3.58398 11.1797 3.59072 11.3833 3.62016 12.0203C3.64912 12.6562 3.74995 13.0905 3.89761 13.4702C4.0501 13.8629 4.25421 14.1965 4.58662 14.5283C4.91903 14.8601 5.25177 15.0644 5.64478 15.2173C6.02498 15.365 6.45879 15.4658 7.0947 15.4948C7.73195 15.5238 7.93524 15.531 9.55744 15.531C11.1796 15.531 11.3833 15.5242 12.0202 15.4948C12.6561 15.4658 13.0904 15.365 13.4701 15.2173C13.8629 15.0644 14.1958 14.8603 14.5283 14.5283C14.8607 14.1964 15.0643 13.8629 15.2173 13.4702C15.3649 13.0905 15.4662 12.6562 15.4947 12.0203C15.5237 11.3829 15.5304 11.1797 15.5304 9.55752C15.5304 7.93532 15.5237 7.7317 15.4947 7.09479C15.4658 6.45883 15.3649 6.02434 15.2173 5.64486C15.0643 5.25209 14.8602 4.91916 14.5283 4.5867C14.1963 4.25424 13.8629 4.05019 13.4706 3.8977C13.0904 3.75003 12.6561 3.64873 12.0206 3.62024C11.3837 3.59128 11.1801 3.58407 9.55791 3.58407C7.93572 3.58407 7.73195 3.59081 7.0947 3.62024Z" fill="#F8F8F8"/>
+                                </svg>
+                                
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="#F8F8F8" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.67276 0C4.39428 0 0.115234 4.27905 0.115234 9.55752C0.115234 14.836 4.39428 19.115 9.67276 19.115C14.9512 19.115 19.2303 14.836 19.2303 9.55752C19.2303 4.27905 14.9512 0 9.67276 0ZM10.3111 10.1163V15.9291L7.97176 15.9292V10.1163H6.01562V7.85098H7.97182V6.1803C7.97182 4.24151 9.15592 3.18584 10.8855 3.18584C11.7139 3.18584 12.4259 3.2475 12.6335 3.27501V5.30112L11.4339 5.30168C10.4933 5.30168 10.3111 5.74868 10.3111 6.40455V7.85092H12.5544L12.2623 10.1163H10.3111Z" fill="#F8F8F8"/>
+                                </svg>
+                        </div>
+                    </div>
+                    <div class="footer_logo">
+                        <img src="img/logo_white.svg" alt="logo">
+                        <img src="img/label.svg" alt="label">
+                    </div>
+                    <div class="footer_information">
+                        <p class="footer_contacts_text">Ваш персональный помощник в покупке участка: </p>
+                        <p class="footer_contacts_subtext">Svetlana Davidovski</p>
+                        <p class="footer_contacts_subtext">+372 5813 0166</p>
+                        <div class="footer_links">
+                            <a href="#" class="footer_link">Telegram</a>
+                            <a href="#" class="footer_link">WhatApp</a>
+                            <a href="#" class="footer_link">Viber</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>  
-    </div>
-
-    <div class="section last_projects" id="last-projects">
-        <h2 class="title">Последние проекты</h2>
-        <hr class="title_hr"> 
-        <div class="project_items">
-            <div class="pr_container">
-                <div class="project_item">
-                    <a href="https://ledfed.github.io/startup/" class="project_link" target="_blank" ></a>
-                </div>
-            </div>
-            <div class="pr_container">        
-                <div class="project_item_2">
-                        <a href="https://ledfed.github.io/flaby/" class="project_link" target="_blank"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- BLOCK  -->
-    <div class="contacts" >
-        <div class="cont_hover_one"></div>
-        <div class="cont_hover_two"></div>
-        <div class="contacts_content">
-            <h3 class="contacts_title">Daniel D</h3>
-            <p class="contacts_pse_title">Middle-разработчик</p>
-            <div class="contacts_text">Кубинский революционер, государственный, политический и партийный деятель, руководивший Кубой с 2014 до 2018 года. На государственном уровне занимал посты Премьер-министра и Председателя Совета министров, Председателя Государственного совета Кубы.</div>
-        </div>
-    </div>
-    <!-- CONTACTS  -->
-    <h2 class="section title" id="contacts" >Заказать сайт</h2>
-    <hr class="title_hr"> 
-    <from class="contacts_column">
-        <input class="c_input" type="text" placeholder="Nicname">
-        <input class="c_input" type="email" placeholder="Example@gmail.com">
-        <button class="c_button">Заказать</button>
-        <p class="c_text">*Мы не занимаемся рассылкой спама</p>
-    </from>
-
-    <footer >
-        <h4 class="footer_title">Обновления</h4>
-        <p class="footer_text">Следите за свежими обновлениями сервиса в социальных сетях и на официальных страницах </p>
-        <div class="social_media">
-            <img src="img/media/facebook.png" alt="">
-            <img src="img/media/instagramm.png" alt="">
-            <img src="img/media/telegramm.png" alt="">
-            <img src="img/media/vk.png" alt="">
-        </div>
     </footer>
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="js/app.js"></script>
-<!-- <script src="js/app1.js"></script> -->
 </body>
 </html>

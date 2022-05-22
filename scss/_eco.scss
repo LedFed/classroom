@@ -1,0 +1,369 @@
+.eco {
+    background: #F7F4F4;
+    // height: 100vh;
+    .main_title {
+        padding-top: 96px;
+        margin-bottom: 75px;
+    }
+    .container{
+        padding: 0 26px;
+    }
+}
+
+
+.eco_itmes {
+    display: flex;
+    flex-direction: row;
+    white-space:nowrap;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    margin-bottom: 104px;
+    row-gap: 16px;
+}
+.eco_item {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+    color: #1D1F1D;
+    &.active{
+        font-weight: 500;
+        color: #314C51;
+    }
+}
+.eco_column {
+    display: flex;
+    column-gap: 50px;
+    padding-bottom: 134px;
+}
+.eco_row {
+}
+.eco_subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+    color: #1D1F1D;
+}
+.eco_text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+    color: #1D1F1D;
+    margin-top: 8px;
+    margin-bottom: 35px;
+}
+.btn_preload {
+    margin-right: 25px;
+}
+.btn_next {
+    transform: rotate(180deg);
+}
+//==============================
+.none{
+    display: none;
+}
+
+.eco_margin_top{
+    padding-bottom: 266px;
+    .main_title{
+        margin-bottom: 33px;
+    }
+    .description_text{
+        padding-bottom: 60px;
+    }
+}
+.eco_box {
+    margin-top: 100px;
+    left: 40px;
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    align-items: center;
+    position: relative;
+    &::after{
+        content: '01.02.2023';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #858685;
+        position: absolute;
+        top: -70px;
+        right: 279px;
+    }
+    &::before{
+        content: '01.06.2021';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #858685;
+        position: absolute;
+        top: -70px;
+        left: -46px;
+    }
+    
+}
+.eco_line {
+    height: 2px;
+    width: 904px;
+    background-color:#C4C4C4;
+    position: relative;
+    &::before{
+        content: '';
+        width: 410px;
+        height: 2px;
+        position: absolute;
+        background-color: #314C51;
+    }    
+}
+.eco_elopce {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #314C51;
+    position: absolute;
+    top:-4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:first-child{
+        width: 38px;
+        height: 38px;
+        left: -38px; 
+        top: -17px;
+        &::after{
+            content: 'Подготовительные работы';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            position: absolute;
+            top: 55px;
+            text-align: left;
+            left: 0;
+            color: #1D1F1D;
+        }
+        &::before{
+            content: "0%";
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #1D1F1D;
+            top: -25px;
+            position: absolute;
+        }
+    }
+    &:nth-child(2){
+        left:57px;
+        &::after{
+            content: 'Геология';
+            font-weight: 300;
+            font-size: 8px;
+            line-height: 10px;
+            color: #1D1F1D;
+            margin-bottom: 43px;
+        }
+    }
+    &:nth-child(3){
+        left:133px;
+        &::after{
+            content: 'Геодезия';
+            font-weight: 300;
+            font-size: 8px;
+            line-height: 10px;
+            color: #1D1F1D;
+            margin-top: 43px;
+        }
+    }
+    &:nth-child(4){
+        left:209px;
+        &::after{
+            content: 'Дендрология';
+            font-weight: 300;
+            font-size: 8px;
+            line-height: 10px;
+            color: #1D1F1D;
+            margin-bottom: 43px;
+        }
+    }
+    &:nth-child(5){
+        width: 38px;
+        height: 38px;
+        left: 276px;
+        top: -17px;
+        &::after{
+            content: 'Проектирование дорог';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            position: absolute;
+            top: 55px;
+            text-align: left;
+            left: 0;
+            color: #1D1F1D;
+        }
+        &::before{
+            content: 'Проектирование коммуникаций';
+            font-weight: 300;
+            font-size: 8px;
+            line-height: 10px;
+            color: #1D1F1D;
+            margin-top: 43px;
+            text-align: center;
+            position: absolute;
+            left: 94px;
+            display: block;
+        }
+    }
+    &:nth-child(6){
+        left: 400px;
+        animation: ellipse 2s ease-in-out infinite;
+       
+        &::before{
+            content: '48%';
+            width: 69px;
+            height: 32px;
+            border-radius: 5%;
+            background-color: #314C51;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            // text-align: center;
+            color: #F8F8F8;
+
+            position: absolute;
+            top: -50px;
+        }
+    }
+    &:nth-child(7){
+        left: 475px;
+        background-color: #858685;
+        &::after{
+            content: 'Проектирование дорог';
+            font-weight: 300;
+            font-size: 8px;
+            line-height: 10px;
+            color: #1D1F1D;
+            margin-bottom: 43px;
+            text-align: center;
+        }
+    }
+    &:nth-child(8){
+        left: 472px;
+        width: 38px;
+        height: 38px;
+        left: 588px;
+        top: -17px;
+        background-color: #858685;
+        &::after{
+            content: 'Строительство дорог';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            position: absolute;
+            top: 55px;
+            text-align: left;
+            left: 0;
+            color: #1D1F1D;
+        }
+    }
+    &:nth-child(9){
+        left: 671px;
+        background-color: #858685;
+        &::after{
+            content: 'Подготовка участков';
+            font-weight: 300;
+            font-size: 8px;
+            line-height: 10px;
+            color: #1D1F1D;
+            margin-bottom: 43px;
+            text-align: center;
+        }
+    }
+    &:nth-child(10){
+        left: 735px;
+        background-color:  #858685;;
+        &::after{
+            content: 'Строительство коммуникаций';
+            font-weight: 300;
+            font-size: 8px;
+            line-height: 10px;
+            color: #1D1F1D;
+            margin-top: 43px;
+            text-align: center;
+        }
+    }
+    &:nth-child(11){
+        left: 799px;
+        background-color:  #858685;;
+        &::after{
+            content: 'Строительство дорог';
+            font-weight: 300;
+            font-size: 8px;
+            line-height: 10px;
+            color: #1D1F1D;
+            margin-bottom: 43px;
+            text-align: center;
+        }
+    }
+    &:nth-child(12){
+        left: 472px;
+        width: 38px;
+        height: 38px;
+        left: 866px;
+        top: -17px;
+        background-color: #858685;;
+        &::after{
+            content: 'Инфраструктура готова';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            position: absolute;
+            top: 55px;
+            text-align: left;
+            left: 0;
+            color: #1D1F1D;
+        }
+        &::before{
+            content: "100%";
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #1D1F1D;
+            top: -25px;
+            position: absolute;
+        }
+    }
+}
+
+.eco_triangle{
+    &::after{
+        content: url('../img/tre.svg'); 
+        top: -22px;
+        left: 0px;
+        position: absolute;
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes ellipse {
+    0%{
+        transform:scale(.95);
+    }50%{
+        transform:scale(1.1);
+    }100%{
+        transform:scale(.95);
+    }
+}

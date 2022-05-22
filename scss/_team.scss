@@ -1,0 +1,166 @@
+.team {
+    background: #314C51;
+    position: relative;
+    // height: 1000vh;  
+    &::after{
+        content: url(../img/romb.svg);
+        position: absolute;
+        top: 300px;
+        left: 300px;
+        background-position:center;
+        // background-attachment: fixed;
+    }
+    .main_title{
+        padding-top: 141px;
+        margin-bottom: 33px;
+    }
+    .description_text{
+        color: #F8F8F8;
+        margin-bottom: 147px;
+    }
+    .container{
+        padding: 0 26px;
+    }
+}
+.team_items {
+    padding-bottom: 278px;
+    margin-left: 46%;
+    white-space: nowrap;
+}
+.team_item {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+    color: #F8F8F8;
+    list-style-type: decimal;
+    span{
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.team_doc {
+    background: url(../img/up.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .container{
+        padding: 0 26px;
+    }
+    .main_title {
+        padding-top: 141px;
+        padding-bottom: 33px;
+        z-index: 1;
+    }
+    .description_text {
+        color: #F8F8F8;
+        z-index: 1;
+        margin-bottom: 143px;
+    }
+}
+
+.team_doc_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px 52px ;
+    padding-bottom: 300px;
+}
+.team_doc_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 364px;
+    height: 63px;
+    border-radius: 30px;
+    border: 1px solid #F8F8F8;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 90%;
+    letter-spacing: 0.0703846px;
+    color: #CFD3D0;
+    transition: .3s ease-in background;
+    // margin-left: 10px;
+    &::before{
+        content: url(../img/dowland.svg);
+        margin-right: 10px;
+    }
+    &:hover{
+        background-color: #F8F8F8;
+        color: #314C51;
+    }
+}
+
+.map {
+    background-color: #F8F8F8;
+    .container {
+        padding: 0 26px;
+    }
+    .main_title {
+       
+    }
+}
+
+.map_column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 109px;
+    margin-bottom: 41px;
+}
+
+.maps_link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+    text-decoration-line: underline;
+    color: #1D1F1D;
+    &::before{
+        content: url(../img/places.svg);
+        background-size: cover;
+        margin-right: 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+.maps {
+    margin-bottom: 130px;
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+    display: block;
+    iframe{
+        border-radius: 60px;
+    }
+    &:hover{
+        filter: grayscale(0%);
+    }
+}
+
+.walked {
+    background: url(../img/walked.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 400px;
+    .container {
+        padding: 0 26px;
+    }
+    .main_title {
+        padding-top: 140px;
+        margin-bottom: 33px;
+
+    }
+    .description_text {
+        color: #F8F8F8;
+        max-width: 500px;
+        margin-bottom: 62px;
+    }
+    .header_btn{
+        color: #F8F8F8;
+        border: 1px solid #F8F8F8;
+    }
+}
+

@@ -1,0 +1,278 @@
+.place_position_items {
+    padding: 255px 26px 0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+.place_position_item {
+    img{
+        width: unset;
+    }
+}
+.place_title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+    color: #1D1F1D;
+    margin: 30px 0;
+}
+.place_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+.place{
+    overflow: hidden;
+}
+.place_position {
+    background: url('../img/fons.png') no-repeat center ;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.place_land {
+    background-position: center;
+    margin-top: 160px;
+    margin-bottom: 56px;
+    text-align: center;
+    img{
+        height: auto;
+        max-width: 100%;
+        background-size: contain;
+    }
+    transition: .5s ease-in-out;
+    &:hover .place_land_info{
+        opacity: 1;
+    }
+}
+
+.place_land_item {
+    position: relative;
+}
+
+.place_land_items{
+    position: absolute;
+    &::before{
+        content: '';
+        font-weight: 300;
+        font-size: 44px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #F8F8F8;
+    }
+    &:first-child{
+        right: 426px;
+        top: 395px;
+        &::before{
+            content: '6';
+            position: absolute;
+            top: 41px;
+            left: 67px;
+        }
+    }
+    &:nth-child(2){
+        right: 384px;
+        top: 288px;
+        &::before{
+            content: '3';
+            left: 57px;
+            top: 34px;
+            position: absolute;
+        }
+    }
+    &:nth-child(3){
+        right: 341px;
+        top: 113px;
+        &::before{
+            content: '2';
+            position: absolute;
+            left: 35px;
+            top: 61px;
+        }
+    }
+    &:nth-child(4){
+        right: 687px;
+        top: 17px;
+        &::before{
+            content: '10';
+            position: absolute;
+            left: 78px;
+            top: 39px;
+        }
+    }
+    &:nth-child(5){
+        right: 691px;
+        top: 153px;
+        &::before{
+            content: '11';
+            position: absolute;
+            left: 78px;
+            bottom: 112px;
+        }
+    }
+    &:nth-child(6){
+        right: 635px;
+        top: 249px;
+        &::before{
+            content: '7';
+            position: absolute;
+            left: 73px;
+            top: 95px;
+        }
+    }
+    &:nth-child(7){
+        right: 518px;
+        top: 217px;
+        &::before{
+            content: '8';
+            position: absolute;
+            left: 80px;
+            top: 73px;
+        }
+    }
+    &:nth-child(8){
+        right: 515px;
+        top: 30px;
+        &::before{
+            content: '9';
+            position: absolute;
+            left: 70px;
+            top: 22px;
+        }
+    }
+    &:nth-child(9){
+        right: 324px;
+        top: 35px;
+        &::before{
+            content: '1';
+            position: absolute;
+            right: 71px;
+            top: 15px;
+        }
+    }
+    &:nth-child(10){
+        right: 451px;
+        top: 526px;
+        &::before{
+            content: '5';
+            position: absolute;
+            right: 56px;
+            top: 45px;
+        }
+    }
+    &:nth-child(11){
+        right: 564px;
+        top: 445px;
+        &::before{
+            content: '4';
+            position: absolute;
+            left: 79px;
+            top: 63px;
+        }
+    }
+    // transition: 1s ease-in-out;
+    &:hover .place_land_info{
+        display: block;
+    }
+    &:hover path {
+        fill: #fff;
+        fill-opacity: .6;
+    }
+}
+
+.place_elipse {
+    display: flex;
+    justify-content: center;
+    padding-top: 475px;
+}
+
+.place_cloud{
+    position: absolute;
+    animation: clouds 15s  ease-in-out  both 3s;
+}
+
+.place_land_info{
+    width: 247px;
+    height: 201px;
+    border-radius: 15px;
+    background: rgba(152, 152, 152, 0.25);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 0 19px;
+    padding-top: 8px;
+    opacity: 0;
+    position: absolute;
+    left: 240px;
+    transition: .5s ease-in-out;
+}
+
+.place_land_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    &:first-child{
+        padding-bottom: 30px;
+        margin-bottom: 0;
+    }
+    &:nth-child(5){
+        margin-bottom: 30px;
+    }
+}
+.place_land_title {
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F8F8F8;
+}
+.place_land_text {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #F8F8F8;
+}
+.place_land_subtitle {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #F8F8F8;
+}
+.place_land_texts {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    color: #F8F8F8;
+}
+.place_land_btn {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #F8F8F8;
+    border-radius: 15px;
+    padding: 5px 70px;
+    margin-top: 30px;
+    border: 1px solid #F8F8F8;
+    transition: .2s ease-in;
+    &:hover{
+        background-color: #F8F8F8;
+        color: #000;
+    }
+}
+
+@keyframes clouds {
+    0%{
+        left: 0;
+    }100%{
+        left: 400px;
+    }
+}

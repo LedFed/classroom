@@ -1,0 +1,117 @@
+.main_title{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 90%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0703846px;
+    color: #1D1F1D;
+    // padding-left: 26px;
+    &.white{
+        color: #F8F8F8 !important;
+    }
+}
+
+.description_corect {
+    .main_title{
+        margin-top: 176px;
+        margin-bottom: 85px;
+        max-width: 541px;
+        padding-left: 26px;
+    }
+}
+.description_column {
+    padding: 0 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 60px;
+}
+.description_text li{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+    color: #1D1F1D;
+    list-style: disc;
+}
+
+.description_tree{
+    margin-top: 238px;
+    background: url(/img/tree.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    filter: grayscale(50%);
+    position: relative;
+    &::after{
+        content: "";
+        background-color: black;
+        position: absolute;
+        inset: 0px 0px;
+        z-index: -1;
+        opacity: 40%;
+    }
+    .main_title{
+        padding-top: 208px;
+        z-index: 1;
+        padding-left: 26px;
+    }
+    .tree_text{
+        max-width: 636px;
+        margin-top: 69px;
+        margin-left: 441px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+        letter-spacing: 0.1px;
+        color: #F8F8F8;
+        padding-bottom: 240px;
+    }
+}
+.description_history {
+    .container{
+        padding: 0 26px;
+    }
+    .main_text{
+        max-width: 368px;
+    }
+    .description_text{
+        margin-top: 33px;
+        margin-bottom: 85px;
+    }
+    .main_title{
+        margin-top: 141px;
+    }
+}
+
+.description_text {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+    color: #1D1F1D;
+    .white{
+        color: #F8F8F8;
+    }
+}
+.description_info {
+    display: flex;
+    margin-bottom: 99px;
+    justify-content: space-between;
+
+}
+.main_text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+    color: #1D1F1D;
+}
+
+.descript_highway{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 100px;
+}
